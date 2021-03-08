@@ -24,6 +24,29 @@ public class Libretto {
 			rit+=v+"\n";
 		return rit;	
 	}
+
+
+	public List<Voto> listaVotiUguali(int punteggio) {
+		List<Voto> risultato = new ArrayList<>();
+		for (Voto v : this.voti)
+			if(v.getVoto() == punteggio)
+				risultato.add(v) ;
+		return risultato;
+	}
+
+
+	public Libretto librettoVotiuguali(int i) {
+		Libretto risultato = new Libretto ();
+		
+		for(Voto v : this.voti)
+			if(v.getVoto() == i)
+				risultato.add(v);
+		
+		return risultato;
+	}
+
+
+	
 	
 	
 
