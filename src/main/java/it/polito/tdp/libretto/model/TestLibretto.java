@@ -30,5 +30,7 @@ public class TestLibretto {
 	Libretto l25 = libretto.librettoVotiuguali(25);
 	System.out.println(l25);
 	
+	
+	
 	}
 }
